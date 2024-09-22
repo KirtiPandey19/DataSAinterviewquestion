@@ -1,0 +1,104 @@
+Question 1: What is a linked list?
+Answer: A linked list is a data structure used for storing a collection of elements, known as nodes, where each node contains two main components:
+
+Data: This is the actual value or information stored in the node.
+Pointer/Reference: This points to the next node in the sequence. In the case of a doubly linked list, there will be an additional pointer to the previous node.
+
+Key Features of Linked Lists:
+Dynamic Size: Unlike arrays, linked lists can grow or shrink in size dynamically as elements are added or removed.
+This is because linked lists allocate memory as needed for each node, rather than reserving a fixed amount of memory upfront.
+
+Non-contiguous Memory Allocation: Nodes in a linked list can be scattered throughout memory. 
+Each node points to the next node, allowing for efficient insertion and deletion without the need to shift other elements, as is necessary with arrays.
+
+
+Question 2: What are the different types of linked lists?
+Answer: Singly linked list, doubly linked list, and circular linked list.
+Singly Linked List: Each node points only to the next node. Traversal is one-way, from the head to the last node.
+Doubly Linked List: Each node points to both the next and the previous node, allowing traversal in both directions.
+Circular Linked List: The last node points back to the first node instead of pointing to null, creating a circular structure. This can be either singly or doubly linked.
+
+
+Question 3: What are the advantage of Linked List?
+Answer: Advantages of Linked Lists:
+Dynamic memory allocation
+Efficient insertion and deletion
+Can represent complex data structures
+Can be used to implement queues and stacks
+Can be used for memory management and caching
+Can be used for garbage collection
+
+
+Question 4: What are the disadvantage of Linked List?
+Answer: Disadvantages of Linked Lists:
+Slow random access
+More memory overhead
+Difficult to debug
+Not cache-friendly
+Can suffer from memory leaks
+
+Question 5: What is a cycle/loop in Singly Linked List:
+Answer: A cycle, also known as a loop, in a singly-linked list occurs when a node in the list points back to a previous node, creating a circular path. 
+This means that if you start traversing the list from any node, you will eventually come back to the same node, forming an infinite loop.
+
+Question 6: What is time complexity of Linked List operations?
+Answer: The time complexity of common operations on a singly-linked list are as follows:
+
+Insertion:
+
+At the beginning: O(1)
+At the end: O(n)
+At a specific position: O(n)
+Deletion:
+
+At the beginning: O(1)
+At the end: O(n)
+At a specific position: O(n)
+Search: O(n)
+Traversal: O(n)
+
+Question 7: Which type of memory allocation is referred for Linked List?
+Answer :Dynamic memory allocation is referred for Linked List.
+
+Question 8: What do you know about traversal in linked lists?
+Answer: The term 'traversal' refers to the operation of processing each element present in the list.
+
+Question 9:How many pointers are necessary to implement a simple Linked List?
+Answer: To implement a simple singly linked list, you need at least two types of pointers:
+
+Node Pointer: Each node in the linked list has a pointer that points to the next node in the list. This pointer is usually part of the node's structure.
+Head Pointer: A pointer that keeps track of the first node in the linked list. This pointer is essential for accessing the linked list, as it serves as the entry point.
+
+
+Question 10:  Mention some interfaces implemented by Linked List in Java.
+Answer: Some of the main interfaces implemented by Java Linked Lists are:
+Serializable
+Queue
+List
+Cloneable
+Collection
+Deque
+Iterable
+
+Question 11: Application of Linkedlist
+Answer: Applications of Linked Lists:
+Creating Data Structures: Linked lists serve as the foundation for building other dynamic data structures, such as stacks and queues.
+Dynamic Memory Allocation: Dynamic memory allocation relies on linked lists to manage and allocate memory blocks efficiently.
+Web Browser is one important application of Linked List.
+
+Question 12: 
+Answer: Let’s talk about assuming the data stored is integer. Another main difference between an array and a linked list is the memory used. In the case of an array, we are storing integers that consume 4 Bytes for every int, whereas in a linked list, we are storing data and a pointer at every node, so the memory used up will depend on the configuration of the system.
+
+32 Bit System	                                                                               64 Bit System
+Int - 4 Bytes	                                                                               Int - 4 Bytes
+Pointer - 4 Bytes                                                                          	Pointer - 8 Bytes
+Overall - 8 Bytes                                                                	          Overall - 12 Bytes
+Therefore, in the case of a 64 Bit system, it occupies or consumes more space than a 32 Bit system.
+
+
+
+
+
+
+
+
