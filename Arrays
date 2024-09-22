@@ -1,0 +1,84 @@
+Question 1: What is an array?
+Answer: An array in programming is a data structure that stores a fixed-size sequence of elements of the same type. It allows you to store multiple values in a single variable, and these values can be accessed using an index. In most languages, including Java, array indexing starts from 0.
+
+Key Features of Arrays:
+Fixed Size: Once created, the size of an array is fixed. You can't change the size of the array after it's initialized.
+Same Data Type: All elements in the array must be of the same data type (e.g., integers, strings, etc.).
+Indexed Access: Each element in the array can be accessed using an index number, starting from 0.
+
+
+Question 2: Can an array be resized at runtime?Is in JaVA?
+Answer: In some programming languages, arrays can be resized dynamically, while in others, such as C, the size is fixed.No, in Java, arrays cannot be resized once they are created. When you create an array in Java, you define its size, and that size is fixed throughout the lifecycle of the array.
+
+Question 3:Question 3: What is the time complexity for accessing an element in an array?
+Answer: The time complexity for accessing an element in an array is O(1), as it can be accessed directly using its index.
+
+
+Question 4: What is the difference between an array and a linked list?
+Ans:
+Aspect	Array	                                                                                                     Linked List
+Structure	A collection of elements stored in contiguous memory locations.                   A collection of nodes, where each node points to the next node in the list.
+Size	Fixed size (must be defined at the time of creation).	                                 Dynamic size (can grow or shrink at runtime).
+Access Time	Constant time (O(1)) for accessing elements using an index.	                     Linear time (O(n)) for accessing elements, as you need to traverse the list.
+Memory Usage	More memory efficient because of contiguous storage.	                         Uses more memory due to pointers/reference fields in each node.
+Insertion/Deletion Time	Inserting or deleting elements is slow (O(n))
+unless the element is at the end.Shifting is required.	                                      Inserting or deleting nodes is faster (O(1)) if done at the head or tail. No need to shift elements.
+Cache Friendliness	More cache-friendly due to continuous memory allocation.	                Less cache-friendly because nodes are scattered in memory.
+Random Access	Supports random access (can directly access any element by index).	            Does not support random access (must traverse the list).
+Data Structure Type	Static data structure (size is determined at creation).	                 Dynamic data structure (size can change during execution).
+Implementation Complexity	Simple to implement due to direct memory access.	                 More complex to implement, as each node needs a pointer to the next.
+Variants	No major variants, but multi-dimensional arrays exist.                             	Variants include singly linked list, doubly linked list, and circular linked list.
+
+
+Question 5: Explain the concept of a multi-dimensional array.
+
+Ans:A multi-dimensional array is an array that contains other arrays. For example, a 2D array is an array of arrays, representing a matrix.A multi-dimensional array is an array of arrays.
+It is used to store data in a matrix-like format, allowing for more than one dimension of indexing.
+A common type of multi-dimensional array is the two-dimensional array, which can be visualized as a table or grid.
+
+Example of Multi-dimensional Arrays:
+1D Array: List of elements (like a row).
+2D Array: Grid of rows and columns.
+3D Array: A set of 2D arrays (like a cube).
+
+Question 6: How would you reverse an array in-place in linear time and constant space?
+Answer: One approach is to use two pointers starting from the beginning and end of the array and swap the elements until they meet in the middle.
+
+Question 7: What is an array index out of bounds exception?
+Answer: An Array Index Out of Bounds Exception in Java is a runtime exception that occurs when an attempt is made to access an array using an index that is either negative or greater than or equal to the size of the array.
+In Java, arrays have a fixed size, and each element is accessed by an index starting from 0 to n-1, where n is the length of the array.
+
+Causes of the Exception:
+Accessing an index that is less than 0 (negative index).
+Accessing an index greater than or equal to the length of the array.
+
+Question 8: Discuss the advantages and disadvantages of using arrays.
+Answer: Advantages: Fast access, memory efficiency, and simplicity.
+Disadvantages: Fixed size, inefficiency in insertion and deletion, and memory waste due to pre-allocation.
+Arrays are ideal for scenarios where the number of elements is known in advance and fast access is required, but other data structures like ArrayLists or LinkedLists may be better for dynamic sizes and frequent insertions/deletions.
+
+Question 9:Explain the concept of a jagged array.
+Answer: A jagged array (also known as an array of arrays) is an array in which each element is itself an array, and these inner arrays can have different lengths. 
+This differs from a standard multi-dimensional array, where all rows (or dimensions) must have the same length.
+
+Question 10:Explain the concept of a sparse array.
+Answer: A sparse array is a type of array in which most of the elements have a default value (typically zero or null), and only a few elements hold non-default values. 
+It is the opposite of a dense array, where most of the elements contain significant, non-default values.
+
+Advantages of Using Sparse Arrays:
+Memory Efficiency: Sparse arrays save memory because they only store non-default values, making them ideal for large datasets with few significant entries.
+Improved Performance: Operations like searching and updating can be faster, as they only involve a smaller dataset rather than the entire array.
+
+Disadvantages of Using Sparse Arrays:
+Complexity: Accessing or modifying values requires additional logic (e.g., checking the position of non-default values), making the implementation more complex.
+Indirect Access: Instead of direct indexing, you might need to traverse or search through the list of non-default elements, which can be slower in some cases compared to traditional arrays.
+
+Question 11: What is the difference between an array and a list?
+Answer:                              Feature	Array	                                                                                              List
+Size                                    	Fixed	                                                                                              Dynamic
+Data Type	                         Homogeneous (same type)                                                             	Homogeneous or Heterogeneous (depends on language)
+Memory Allocation                    	Contiguous                                                                      	Dynamic (depends on implementation)
+Access Time	                            O(1)	                                                                               O(1) for ArrayList, O(n) for LinkedList
+Insertion/Deletion	            Inefficient (requires shifting)	                                                              Efficient (built-in methods)
+Flexibility	                      Low (fixed size, fixed type)	                                                              High (resizable, flexible types)
+
