@@ -1,0 +1,25 @@
+Question 1: What is a stack?
+Answer: A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle.
+A stack is a data structure that follows the Last In, First Out (LIFO) principle, meaning the last element added to the stack will be the first one to be removed. It operates with two main operations:
+
+push(): Adds an element to the top of the stack.
+pop(): Removes and returns the element at the top of the stack.
+Additional operations:
+
+peek(): Retrieves, without removing, the element at the top of the stack.
+isEmpty(): Checks if the stack is empty.
+size(): Returns the number of elements in the stack.
+Stacks are commonly used in scenarios like:
+
+Undo/redo functionalities in text editors.
+Backtracking algorithms (e.g., depth-first search).
+Expression evaluation (e.g., parsing mathematical expressions.
+
+Question 2: What are the operations performed on a stack?
+Answer: The common operations on a stack are push (insert an element), pop (remove the top element), and peek (view the top element).
+
+Question 3: How is a stack implemented in an array?
+Answer:A stack can be implemented using an array by managing an index (or pointer) to track the top of the stack
+
+Question 4: What is the time complexity of stack operations?
+Answer: Push, pop, and peek operations have a time complexity of O(1).
